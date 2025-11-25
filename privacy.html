@@ -1,53 +1,219 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>JetSky Platform 清管器定位 隐私政策</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./resource/weblogo.png" type="image/png">
+    <title>北京捷天科技有限责任公司-清管器定位隐私政策</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
+        /* 基础重置样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', sans-serif;
         }
 
-        h1 {
+        body {
+            line-height: 1.6;
             color: #333;
         }
 
-        .update {
-            color: #666;
-            font-size: 14px;
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 导航栏样式 */
+        header {
+            background-color: #032653;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #007bff; /* 主题色 */
+        }
+
+        .nav-links {
+            display: flex;
+            color: white;
+        }
+
+            .nav-links li {
+                margin-left: 30px;
+            }
+
+            .nav-links a:hover {
+                color: #007bff;
+            }
+
+        /* 主页横幅 Hero Section */
+        .hero {
+            /* height: 100vh; */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('你的背景图链接.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+           
+            margin-top: 80px; /* 给固定导航栏留出空间 */
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+            .btn:hover {
+                background-color: #0056b3;
+            }
+
+        /* 内容区块通用样式 */
+        section {
+            padding: 80px 0;
+        }
+
+            section h2 {
+                text-align: left;
+                font-size: 2.5rem;
+                margin-bottom: 40px;
+                color: #222;
+            }
+
+        /* 关于我们 */
+        .about-content {
+            text-align: center;
+        }
+
+        /* 服务 */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: #f4f4f4;
+            padding: 30px;
+            border-radius: 5px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+            .service-card:hover {
+                transform: translateY(-5px);
+            }
+
+        /* 联系我们 */
+        .contact-info {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
         }
     </style>
 </head>
 <body>
-    <h1>JetSky Platform 隐私政策</h1>
-    <p class="update">最后更新日期：2025年10月</p>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="" class="logo">
 
-    <h2>1. 信息收集</h2>
-    <p>JetSky Platform 尊重用户隐私。我们仅收集运行应用所必需的信息。</p>
+                    <img src="./resource/logo.png" alt="公司Logo" style="height: 20%; width: 50%;" />
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#services">服务</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <h2>2. 数据使用</h2>
-    <p>我们收集的信息仅用于：</p>
-    <ul>
-        <li>提供和改进应用功能</li>
-        <li>确保应用稳定运行</li>
-        <li>用户支持服务</li>
-    </ul>
+    <!-- 主页横幅 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>清管器定位 隐私政策</h1>
+            <p class="update">最后更新日期：2024年11月</p>
 
-    <h2>3. 数据共享</h2>
-    <p>我们不会将您的个人信息出售、交易或转让给第三方。</p>
+            <h2>1. 信息收集</h2>
+            <p> 清管器定位 尊重用户隐私。我们仅收集运行应用所必需的信息。</p>
 
-    <h2>4. 联系我们</h2>
-    <p>
-        如果您对隐私政策有任何疑问，请联系：<br>
-        邮箱：business@jetskytec.com
-    </p>
+            <h2>2. 数据使用</h2>
+            <p>我们收集的信息仅用于：</p>
+            <ul>
+                <li>提供和改进应用功能</li>
+                <li>确保应用稳定运行</li>
+                <li>用户支持服务</li>
+            </ul>
+
+            <h2>3. 数据共享</h2>
+            <p>我们不会将您的个人信息出售、交易或转让给第三方。</p>
+
+            <h2>4. 联系我们</h2>
+            <p>
+                如果您对隐私政策有任何疑问，请联系：<br>
+                邮箱：business@jetskytec.com
+            </p>
+
+
+        </div>
+
+    </section>
+
+   
+
     <!-- 联系我们 -->
     <section id="contact">
         <div class="container">
-            <h2>联系我们</h2>
+            <h2 style="text-align:center">联系我们</h2>
             <div class="contact-info">
                 <p><strong>电话：</strong> +86 187-6688-2036</p>
                 <p><strong>邮箱：</strong> shifeng@jetskytec.com</p>
@@ -68,5 +234,4 @@
         </div>
     </footer>
 </body>
-
 </html>
